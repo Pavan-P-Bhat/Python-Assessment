@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+    <h2>Welcome To GFG</h2> 
+    <p>Default code has been loaded into the Editor.</p> 
+  
+    <form action="/api/v1/leave-requests" method="POST"> 
+        <label for="employee_id">Employee ID</label> 
+        <input type="text" id="name" required/> 
+
+        <label for="start_date">Start Date</label> 
+        <input type="date" id="start_date" required/> 
+
+        <label for="end_date">End Date</label> 
+        <input type="date" id="end_date" required/> 
+
+        <label for="leave_type">Choose leave type:</label>
+        <select id="leave_type">
+        <option value="annual">ANNUAL</option>
+        <option value="SICK">SICK</option>
+        <option value="PERSONAL">PERSONAL</option>
+        </select>
+
+        <label for="reason">Review of W3Schools:</label>
+        <input type="input" id="reason" required minlength="10"/> 
+
+        <button type="submit">Submit</button>
+    </form> 
+</body> 
+  
+</html> 
